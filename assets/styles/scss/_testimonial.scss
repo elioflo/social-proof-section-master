@@ -1,0 +1,32 @@
+.testimonial {
+    background-color: var(--primary-very-dark-magenta);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+    border-radius: .5em;
+    padding: 2em;
+
+
+    &__img {
+        border-radius: 100%;
+        width: 2.7em;
+    }
+
+    &__name, &__rol {
+        margin: 0;
+    }
+
+    &__rol {
+        color: var(--primary-soft-pink);
+        font-weight: 400;
+    }
+
+    &__name {
+        
+    }
+
+    &__text {
+        font-size: 1.05em;
+    }
+}

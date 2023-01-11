@@ -1,0 +1,15 @@
+.head {
+    text-align: center;
+
+    &__title {
+        color: var(--primary-very-dark-magenta);
+        font-size: 2.5em;
+        line-height: .8;
+    }
+
+    &__text {
+        color: var(--neutral-dark-grayish-magenta);
+        line-height: 1.5;
+        font-size: 1.1em;
+    }
+}

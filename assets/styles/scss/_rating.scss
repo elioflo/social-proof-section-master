@@ -1,0 +1,19 @@
+.rating {
+    background-color: var(--neutral-light-grayish-magenta);
+    color: var(--primary-very-dark-magenta);
+    font-weight: 700;
+    text-align: center;
+    border-radius: .5em;
+    padding: 1em 0;
+
+    &__stars {
+        display: inline-flex;
+        gap: .5em;
+    }
+
+    &__text {
+        margin: 0;
+        margin-top: .5em;
+        font-size: 1.2em;
+    }
+}
