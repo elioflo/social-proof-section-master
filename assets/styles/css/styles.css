@@ -325,13 +325,13 @@ template {
   --neutral-white: hsl(0, 0%, 100%);
 }
 
-body {
+.container {
   min-height: 100vh;
   font-family: "League Spartan", sans-serif;
   background: url("../../images/bg-pattern-top-mobile.svg") no-repeat top, url("../../images/bg-pattern-bottom-mobile.svg") no-repeat bottom;
 }
 @media (min-width: 769px) {
-  body {
+  .container {
     background: url("../../images/bg-pattern-top-desktop.svg") no-repeat top left/45%, url("../../images/bg-pattern-bottom-desktop.svg") no-repeat bottom right/70%;
     display: flex;
     align-items: center;
@@ -346,14 +346,14 @@ body {
   --neutral-white: hsl(0, 0%, 100%);
 }
 
-.container {
+.main {
   width: calc(100% - 3em);
   max-width: 426px;
   margin: auto;
   padding: 4em 0 5.5em 0;
 }
 @media (min-width: 769px) {
-  .container {
+  .main {
     max-width: 1125px;
     display: grid;
     grid-template-columns: auto 1fr;
@@ -526,4 +526,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=styles.css.map */

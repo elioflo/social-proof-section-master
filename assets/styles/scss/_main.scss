@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'mixins';
+
+.main {
+    width: calc(100% - 3em);
+    max-width: $min-tablet;
+    margin: auto;
+    padding: 4em 0 5.5em 0;
+
+
+    @include media-query($laptop){
+        max-width: 1125px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 256px;
+        padding: 0;
+        row-gap: 4em;
+    }
+}

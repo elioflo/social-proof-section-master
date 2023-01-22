@@ -2,18 +2,17 @@
 @import 'mixins';
 
 .container {
-    width: calc(100% - 3em);
-    max-width: $min-tablet;
-    margin: auto;
-    padding: 4em 0 5.5em 0;
+  min-height: 100vh;
+  font-family: 'League Spartan', sans-serif;
+  background: url('../../images/bg-pattern-top-mobile.svg') no-repeat top,
+    url('../../images/bg-pattern-bottom-mobile.svg') no-repeat bottom;
 
-
-    @include media-query($laptop){
-        max-width: 1125px;
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-template-rows: auto 256px;
-        padding: 0;
-        row-gap: 4em;
-    }
+  @include media-query($laptop) {
+    background: url('../../images/bg-pattern-top-desktop.svg') no-repeat top
+        left / 45%,
+      url('../../images/bg-pattern-bottom-desktop.svg') no-repeat bottom right /
+        70%;
+    display: flex;
+    align-items: center;
+  }
 }

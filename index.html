@@ -9,91 +9,108 @@
 
   <title>Frontend Mentor | Social proof section</title>
 
-  <link rel="stylesheet" href="./assets/styles/css/main.css">
-
+  <link rel="stylesheet" href="./assets/styles/css/styles.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "lit": "https://ga.jspm.io/npm:lit@2.6.1/index.js"
+      },
+      "scopes": {
+        "https://ga.jspm.io/": {
+          "@lit/reactive-element": "https://ga.jspm.io/npm:@lit/reactive-element@1.6.1/reactive-element.js",
+          "lit-element/lit-element.js": "https://ga.jspm.io/npm:lit-element@3.2.2/lit-element.js",
+          "lit-html": "https://ga.jspm.io/npm:lit-html@2.6.1/lit-html.js",
+          "lit-html/is-server.js": "https://ga.jspm.io/npm:lit-html@2.6.1/is-server.js"
+        }
+      }
+    }
+  </script>
+  <script src="./assets/scripts/main.js" type="module"></script>
 </head>
 
 <body>
-
-  <main class="container">
-    <div class="head">
-      <h1 class="head__title">
-        10,000+ of our users love our products.
-      </h1>
-      <p class="head__text">
-        We only provide great products combined with excellent customer service.
-        See what our satisfied customers are saying about our services.
-      </p>
-    </div>
-    <div class="ratings">
-      <div class="rating">
-        <div class="rating__stars">
-          <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
-          <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
-          <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
-          <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
-          <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
-        </div>
-        <p class="rating__text">Rated 5 Stars in Reviews</p>
+  <div class="container">
+    <main class="main">
+      <div class="head">
+        <h1 class="head__title">
+          10,000+ of our users love our products.
+        </h1>
+        <p class="head__text">
+          We only provide great products combined with excellent customer service.
+          See what our satisfied customers are saying about our services.
+        </p>
       </div>
-      <div class="rating">
-        <div class="rating__stars">
-          <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
-          <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
-          <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
-          <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
-          <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
+      <div class="ratings">
+        <div class="rating">
+          <div class="rating__stars">
+            <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
+            <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
+            <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
+            <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
+            <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
+          </div>
+          <p class="rating__text">Rated 5 Stars in Reviews</p>
         </div>
-        <p class="rating__text">Rated 5 Stars in Report Guru</p>
-      </div>
-      <div class="rating">
-        <div class="rating__stars">
-          <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
-          <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
-          <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
-          <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
-          <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
+        <div class="rating">
+          <div class="rating__stars">
+            <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
+            <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
+            <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
+            <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
+            <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
+          </div>
+          <p class="rating__text">Rated 5 Stars in Report Guru</p>
         </div>
-        <p class="rating__text">Rated 5 Stars in BestTech</p>
-      </div>
-    </div>
-    <div class="testimonials">
-      <div class="testimonial">
-        <img class="testimonial__img" src="./assets/images/image-colton.jpg" alt="">
-        <div class="testimonial__user">
-          <h2 class="testimonial__name">Colton Smith</h2>
-          <h3 class="testimonial__rol">Verified Buyer</h3>
+        <div class="rating">
+          <div class="rating__stars">
+            <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
+            <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
+            <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
+            <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
+            <img src="./assets/images/icon-star.svg" alt="" class="rating__star">
+          </div>
+          <p class="rating__text">Rated 5 Stars in BestTech</p>
         </div>
-        <q class="testimonial__text">
-          We needed the same printed design as the one we had ordered a week prior.
-          Not only did they find the original order, but we also received it in time.
-          Excellent!
-        </q>
       </div>
-      <div class="testimonial">
-        <img class="testimonial__img" src="./assets/images/image-irene.jpg" alt="">
-        <div class="testimonial__user">
-          <h2 class="testimonial__name">Irene Roberts</h2>
-          <h3 class="testimonial__rol">Verified Buyer</h3>
+      <div class="testimonials">
+        <div class="testimonial">
+          <img class="testimonial__img" src="./assets/images/image-colton.jpg" alt="">
+          <div class="testimonial__user">
+            <h2 class="testimonial__name">Colton Smith</h2>
+            <h3 class="testimonial__rol">Verified Buyer</h3>
+          </div>
+          <q class="testimonial__text">
+            We needed the same printed design as the one we had ordered a week prior.
+            Not only did they find the original order, but we also received it in time.
+            Excellent!
+          </q>
         </div>
-        <q class="testimonial__text">
-          Customer service is always excellent and very quick turn around. Completely
-          delighted with the simplicity of the purchase and the speed of delivery.
-        </q>
-      </div>
-      <div class="testimonial">
-        <img class="testimonial__img" src="./assets/images/image-anne.jpg" alt="">
-        <div class="testimonial__user">
-          <h2 class="testimonial__name">Anne Wallace</h2>
-          <h3 class="testimonial__rol">Verified Buyer</h3>
+        <div class="testimonial">
+          <img class="testimonial__img" src="./assets/images/image-irene.jpg" alt="">
+          <div class="testimonial__user">
+            <h2 class="testimonial__name">Irene Roberts</h2>
+            <h3 class="testimonial__rol">Verified Buyer</h3>
+          </div>
+          <q class="testimonial__text">
+            Customer service is always excellent and very quick turn around. Completely
+            delighted with the simplicity of the purchase and the speed of delivery.
+          </q>
         </div>
-        <q class="testimonial__text">
-          Put an order with this company and can only praise them for the very high
-          standard. Will definitely use them again and recommend them to everyone!
-        </q>
+        <div class="testimonial">
+          <img class="testimonial__img" src="./assets/images/image-anne.jpg" alt="">
+          <div class="testimonial__user">
+            <h2 class="testimonial__name">Anne Wallace</h2>
+            <h3 class="testimonial__rol">Verified Buyer</h3>
+          </div>
+          <q class="testimonial__text">
+            Put an order with this company and can only praise them for the very high
+            standard. Will definitely use them again and recommend them to everyone!
+          </q>
+        </div>
       </div>
-    </div>
-  </main>
+    </main>
+  </div>
+  <frontendmentor-footer name="Elio Flores" url="https://elioflo.github.io/elioflo/"></frontendmentor-footer>
 </body>
 
 </html>
