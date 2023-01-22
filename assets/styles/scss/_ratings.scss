@@ -1,6 +1,14 @@
+@import 'variables';
+@import 'mixins';
+
 .ratings {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.3em;
     margin-top: 3em;
+
+    @include media-query($laptop){
+
+    }
 }

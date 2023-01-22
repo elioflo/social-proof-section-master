@@ -1,3 +1,6 @@
+@import 'variables';
+@import 'mixins';
+
 .rating {
     background-color: var(--neutral-light-grayish-magenta);
     color: var(--primary-very-dark-magenta);
@@ -5,15 +8,35 @@
     text-align: center;
     border-radius: .5em;
     padding: 1em 0;
+    width: 100%;
 
     &__stars {
         display: inline-flex;
         gap: .5em;
+        align-items: center;
     }
 
     &__text {
         margin: 0;
         margin-top: .5em;
         font-size: 1.2em;
+    }
+
+    @include media-query($laptop){
+        display: flex;
+        gap: 2em;
+        max-width: calc(426px + 2em);
+
+        &__stars {
+            margin-left: 2em;
+        }
+
+        &:first-of-type {
+            margin-right: auto;
+        }
+
+        &:last-of-type {
+            margin-left: auto;
+        }
     }
 }

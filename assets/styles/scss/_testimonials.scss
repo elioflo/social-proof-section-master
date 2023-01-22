@@ -1,7 +1,18 @@
+@import 'variables';
+@import 'mixins';
+
 .testimonials {
     color: var(--neutral-white);
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1em;
     margin-top: 4em;
+
+    @include media-query($laptop){
+        flex-direction: row;
+        grid-column: 1 / span 2;
+        justify-content: space-between;
+        margin-top: 0;
+    }
 }

@@ -1,11 +1,15 @@
+@import 'variables';
+@import 'mixins';
+
 .testimonial {
     background-color: var(--primary-very-dark-magenta);
     display: flex;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 1.3em;
     align-items: center;
     border-radius: .5em;
     padding: 2em;
+    max-width: 290px;
 
 
     &__img {
@@ -15,6 +19,7 @@
 
     &__name, &__rol {
         margin: 0;
+        font-size: 1.1em;
     }
 
     &__rol {
@@ -28,5 +33,17 @@
 
     &__text {
         font-size: 1.05em;
+    }
+
+
+    @include media-query($laptop){
+        &:first-of-type {
+            align-self: start;
+        }
+
+        &:last-of-type {
+            align-self: end;
+        }
+
     }
 }
